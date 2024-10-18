@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="index.scss">
+    <title>Vite App</title>
+  </head>
+  <body>
+    <div class="midle_section">
+      <div class="notes"></div>
+      <div class="add_note_div">
+        <button class="add_note_button" onclick="openNoteEditor()">
+          <img src="./public/asets/plus-icon.png" alt="+">
+          <!-- <img src="./public/asets/close-icon.webp" alt="+"> -->
+          <!-- <img src="./public/asets/edit-icon.png" alt="+"> -->
+          <!-- <img src="./public/asets/delete-icon.png" alt="+"> -->
+        </button>
+        
+      </div>
+      <div id="note_editor">
+        <h3>Create note</h3>
+        <textarea name="note_editorial_text" id="note_editorial_text"></textarea>
+        <div class="buttons">
+          <!-- <button class="create_note_button" onclick="addNewElement()"> -->
+          <button id="create_note_button">
+            <img src="./public/asets/plus-icon.png" alt="v">
+          </button>
+          <button class="delete_note_draft" onclick="closeNoteEditor()">
+            <img src="./public/asets/close-icon.webp" alt="x">
+          </button>
+        </div>
+
+
+      </div>
+    </div>
+    <div id="overlay hidden"></div>
+
+    <script src="/counter.js"></script>
+  </body>
+</html>
